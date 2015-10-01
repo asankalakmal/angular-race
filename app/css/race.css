@@ -1,0 +1,42 @@
+
+
+.main-nav {
+	float: left;
+}
+
+.breadcrumb-back {
+	padding: 0.625em 0;
+}
+
+.driver-info {
+	float: left;
+}
+
+.driver-info div.driver-picture {
+	float: left;
+	width: 80px;
+}
+
+.driver-info div.driver-country {
+	float: left;
+	width: 40px;
+}
+
+.driver-info div.driver-name {
+	float: left;
+	width: 50px;
+}
+
+.driver-status {
+	float: left;
+	margin-top: 10px;
+}
+
+.driver-status strong {
+	width: 75px;
+	float: left;
+}
+.driver-status span {
+	width: 90px;
+	float: left;
+}
