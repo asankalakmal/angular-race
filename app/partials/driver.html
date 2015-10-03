@@ -1,25 +1,25 @@
 <div class="row" id="driver">
-  <div class="col-md-12 breadcrumb-back">
+  <div class="col-md* breadcrumb-back">
     <a href="./#/drivers"><- Back to drivers list</a>
   </div>
-  <div class="driver-details col-md-2">
-    <div class="driver-info">
-        <div class="driver-picture"><img  ng-show="driver" src="img/drivers/{{driver.Driver.driverId}}.png" /></div>
-        <div class="driver-country"><img ng-show="driver" src="img/flags/{{driver.Driver.nationality}}.png" /></div>
-        <div class="driver-name">{{driver.Driver.givenName}} {{driver.Driver.familyName}}</div>
+    <div class="col-md-2">
+      <div class="driver-info">
+          <div class="driver-picture"><img  ng-show="driver" src="img/drivers/{{driver.Driver.driverId}}.png" /></div>
+          <div class="driver-country"><img ng-show="driver" src="img/flags/{{driver.Driver.nationality}}.png" /></div>
+          <div class="driver-name">{{driver.Driver.givenName}} {{driver.Driver.familyName}}</div>
+      </div>
+      <div class="driver-status">
+        <strong class="status-title">Country:</strong><span class="status-result">{{driver.Driver.nationality}} </span>
+        <strong class="status-title">Team:</strong><span class="status-result">{{driver.Constructors[0].name}}</span>
+        <strong class="status-title">Birth:</strong><span class="status-result">{{driver.Driver.dateOfBirth}}</span>
+        <strong class="status-title"><a href="{{driver.Driver.url}}" target="_blank">Biography</a></strong>
+      </div>
     </div>
-    <div class="driver-status">
-      <strong class="status-title">Country:</strong><span class="status-result">{{driver.Driver.nationality}} </span>
-      <strong class="status-title">Team:</strong><span class="status-result">{{driver.Constructors[0].name}}</span>
-      <strong class="status-title">Birth:</strong><span class="status-result">{{driver.Driver.dateOfBirth}}</span>
-      <strong class="status-title"><a href="{{driver.Driver.url}}" target="_blank">Biography</a></strong>
-    </div>
-  </div>
 
     <div class="col-md-10">
             <div class="panel panel-default">
                 <div class="panel-heading">Drivers Championship Standings</div>
-                <div class="panel-body">
+                <div class="panel-body table-responsive">
                     <table class="table table-bordered table-hover">
                         <thead>
                             <td>Round</td> <td>Grand Prix</td> <td>Team</td> <td>Grid</td> <td>Race</td>
@@ -27,7 +27,7 @@
                         <tbody>
                                 <tr ng-repeat="race in races">
                                   <td>{{race.round}}</td>
-                                  <td><img  src="img/flags/{{race.Circuit.Location.country}}.png" />{{race.raceName}}</td>
+                                  <td class="flag"><img  src="img/flags/{{race.Circuit.Location.country}}.png" />{{race.raceName}}</td>
                                   <td>{{race.Results[0].Constructor.name}}</td>
                                   <td>{{race.Results[0].grid}}</td>
                                   <td>{{race.Results[0].position}}</td>
@@ -37,4 +37,7 @@
                 </div>
             </div>
     </div>
+
+    
+
 </div>

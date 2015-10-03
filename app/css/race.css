@@ -1,16 +1,9 @@
 
 
-.main-nav {
-	float: left;
-}
-
 .breadcrumb-back {
 	padding: 0.625em 0;
 }
 
-.driver-info {
-	float: left;
-}
 
 .driver-info div.driver-picture {
 	float: left;
@@ -24,19 +17,22 @@
 
 .driver-info div.driver-name {
 	float: left;
-	width: 50px;
+	width: 80px;
 }
 
 .driver-status {
-	float: left;
-	margin-top: 10px;
+	margin: 10px 0;
+	width: 165px;
 }
 
 .driver-status strong {
 	width: 75px;
-	float: left;
+
 }
 .driver-status span {
 	width: 90px;
-	float: left;
+}
+
+td.flag img {
+	margin-right: 10px;
 }
