@@ -1,1 +1,1 @@
-# angular-race — the seed for AngularJS apps
+# angular-race — Testing Angular js
